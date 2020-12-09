@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AdventOfCode2020", "AdventOfCode2020\AdventOfCode2020.vcxproj", "{24C3DB52-F245-4BAA-B6A3-931E2EF8AA07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24C3DB52-F245-4BAA-B6A3-931E2EF8AA07}.Debug|x64.ActiveCfg = Debug|x64
+		{24C3DB52-F245-4BAA-B6A3-931E2EF8AA07}.Debug|x64.Build.0 = Debug|x64
+		{24C3DB52-F245-4BAA-B6A3-931E2EF8AA07}.Debug|x86.ActiveCfg = Debug|Win32
+		{24C3DB52-F245-4BAA-B6A3-931E2EF8AA07}.Debug|x86.Build.0 = Debug|Win32
+		{24C3DB52-F245-4BAA-B6A3-931E2EF8AA07}.Release|x64.ActiveCfg = Release|x64
+		{24C3DB52-F245-4BAA-B6A3-931E2EF8AA07}.Release|x64.Build.0 = Release|x64
+		{24C3DB52-F245-4BAA-B6A3-931E2EF8AA07}.Release|x86.ActiveCfg = Release|Win32
+		{24C3DB52-F245-4BAA-B6A3-931E2EF8AA07}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72100B83-7F5D-47EB-8576-A3DF97277EA0}
+	EndGlobalSection
+EndGlobal
