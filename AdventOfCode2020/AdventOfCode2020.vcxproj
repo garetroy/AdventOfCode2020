@@ -154,6 +154,7 @@
   <ItemGroup>
     <Text Include="CMakeLists.txt" />
     <Text Include="Day1\Day1Source.txt" />
+    <Text Include="Day2\Day2Source.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Day1\Day1.h" />

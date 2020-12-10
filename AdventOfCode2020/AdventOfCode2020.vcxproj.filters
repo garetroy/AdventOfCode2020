@@ -19,6 +19,9 @@
     <Text Include="Day1\Day1Source.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="Day2\Day2Source.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cxx">
