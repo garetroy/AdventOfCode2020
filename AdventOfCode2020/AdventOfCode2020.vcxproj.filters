@@ -16,7 +16,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt" />
-    <Text Include="Day1Source.txt">
+    <Text Include="Day1\Day1Source.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
@@ -24,8 +24,10 @@
     <ClCompile Include="Main.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Day1.h">
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Day1\Day1.h">
       <Filter>Header Files</Filter>
-    </ClCompile>
+    </ClInclude>
   </ItemGroup>
 </Project>

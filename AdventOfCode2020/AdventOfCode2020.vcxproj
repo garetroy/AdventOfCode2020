@@ -149,12 +149,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Day1.h" />
     <ClCompile Include="Main.cxx" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt" />
-    <Text Include="Day1Source.txt" />
+    <Text Include="Day1\Day1Source.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Day1\Day1.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

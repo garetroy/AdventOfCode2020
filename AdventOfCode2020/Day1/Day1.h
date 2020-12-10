@@ -32,7 +32,7 @@ namespace AdventOfCode2020
 
 	public:
 		Day1() 
-			: input("Day1Source.txt")
+			: input("./Day1/Day1Source.txt")
 		{}
 
 		const int solutionp1()
