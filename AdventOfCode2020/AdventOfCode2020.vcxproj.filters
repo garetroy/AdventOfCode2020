@@ -16,10 +16,16 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt" />
+    <Text Include="Day1Source.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cxx">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Day1.h">
+      <Filter>Header Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
