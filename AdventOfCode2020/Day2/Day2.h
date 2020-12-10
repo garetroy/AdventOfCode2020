@@ -14,13 +14,12 @@ namespace AdventOfCode2020
 
 	class PasswordRequirement
 	{
-	private:
+	public:
 		folly::fbstring password;
 		int min;
 		int max;
 		char desiredChar;
 
-	public:
 		//No real error handling here.... Just for brevity
 		friend std::istream& operator>>(std::istream& input, PasswordRequirement& passwordRequirement)
 		{
@@ -75,12 +74,35 @@ namespace AdventOfCode2020
 			data = AdventOfCode2020::InputLoader().getInput<PasswordRequirement>(input);
 		}
 
-		int part1() 
+		const int part1() 
 		{ 
-			return -1;
+			int countCorrect = 0;
+			for (PasswordRequirement& pr : data)
+			{
+				int found = std::count(pr.password.begin(), pr.password.end(), pr.desiredChar);
+				if (found >= pr.min && found <= pr.max)
+					countCorrect++;
+			}
+
+			return countCorrect;
 		};
 
-		int part2() { return -1; };
+		const int part2() 
+		{ 
+			int countCorrect = 0;
+			for (PasswordRequirement& pr : data)
+			{
+				char pos1 = pr.password.at(pr.min - 1);
+				char pos2 = pr.password.at(pr.max - 1);
+			
+				if (pos1 == pr.desiredChar && pos2 != pr.desiredChar)
+					countCorrect++;
+				else if (pos1 != pr.desiredChar && pos2 == pr.desiredChar)
+					countCorrect++;
+			}
+
+			return countCorrect;
+		};
 	}; //End of class Day2
 } //End of AdventOfCode2020 namespace
 
