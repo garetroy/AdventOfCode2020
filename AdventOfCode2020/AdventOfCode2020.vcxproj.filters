@@ -29,5 +29,11 @@
     <ClInclude Include="Day1\Day1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Day2\Day2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\InputLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

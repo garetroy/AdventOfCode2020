@@ -1,6 +1,8 @@
 #ifndef _DAY1_H_
 #define _DAY1_H_
 
+#include "../Helper/InputLoader.h"
+
 #include <fstream>
 #include <vector>
 #include <unordered_map>
@@ -10,25 +12,10 @@
 
 namespace AdventOfCode2020
 {
-
 	class Day1
 	{
 	private:
 		folly::fbstring input;
-
-		const std::vector<int> loadData()
-		{
-			int entry;
-			std::vector<int> out;
-			std::ifstream infile(input.toStdString());
-
-			while (infile >> entry)
-			{
-				out.emplace_back(entry);
-			}
-
-			return out;
-		}
 
 	public:
 		Day1() 
@@ -60,7 +47,7 @@ namespace AdventOfCode2020
 		{
 			int desiredSum = 2020;
 
-			std::vector<int> data = loadData(); // cant use fbvector... can't sort
+			folly::fbvector<int> data = AdventOfCode2020::InputLoader().getInput<int>(input); 
 			std::sort(data.begin(), data.end());
 
 			int dataSize = static_cast<int>(data.size());
