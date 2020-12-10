@@ -22,6 +22,9 @@
     <Text Include="Day2\Day2Source.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="Day3\Day3Source.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cxx">
@@ -36,6 +39,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Helper\InputLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day3\Day3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

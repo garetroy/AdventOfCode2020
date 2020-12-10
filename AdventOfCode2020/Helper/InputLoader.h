@@ -25,6 +25,17 @@ namespace AdventOfCode2020
 
 			return out;
 		}
+
+		template<typename T>
+		const T const getSingleItemInput(folly::fbstring fileLocation)
+		{
+			T item;
+			std::ifstream infile(fileLocation.toStdString());
+
+			infile >> item;
+
+			return item;
+		}
 	};
 
 } //End of namespace AdventOfCode2020
