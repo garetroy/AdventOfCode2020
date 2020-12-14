@@ -1,6 +1,7 @@
 #include "./Day1/Day1.h"
 #include "./Day2/Day2.h"
 #include "./Day3/Day3.h"
+#include "./Day4/Day4.h"
 
 #include <iostream>
 #include <memory>
@@ -28,5 +29,11 @@ int main()
 	const unsigned long long d3p2(d3->part2());
 	std::cout << "Part 2: " << d3p2 << std::endl;
 
+	std::cout << "---- DAY 4 ----" << std::endl;
+	std::unique_ptr<AdventOfCode2020::Day4> d4(new AdventOfCode2020::Day4);
+	const int d4p1(d4->part1());
+	std::cout << "Part 1: " << d4p1 << std::endl;
+	const unsigned long long d4p2(d4->part2());
+	std::cout << "Part 2: " << d4p2 << std::endl;
 
 }

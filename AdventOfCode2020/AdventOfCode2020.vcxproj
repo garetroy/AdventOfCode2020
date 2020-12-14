@@ -156,11 +156,13 @@
     <Text Include="Day1\Day1Source.txt" />
     <Text Include="Day2\Day2Source.txt" />
     <Text Include="Day3\Day3Source.txt" />
+    <Text Include="Day4\Day4Source.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Day1\Day1.h" />
     <ClInclude Include="Day2\Day2.h" />
     <ClInclude Include="Day3\Day3.h" />
+    <ClInclude Include="Day4\Day4.h" />
     <ClInclude Include="Helper\InputLoader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

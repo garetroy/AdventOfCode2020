@@ -21,6 +21,7 @@ namespace AdventOfCode2020
 			while (infile >> item)
 			{
 				out.emplace_back(item);
+				item = T();
 			}
 
 			return out;
@@ -35,6 +36,23 @@ namespace AdventOfCode2020
 			infile >> item;
 
 			return item;
+		}
+
+		const folly::fbvector<folly::fbstring> const splitString(std::string str, std::string delimiter)
+		{
+			folly::fbvector<folly::fbstring> splitStrings;
+			while (str.find(delimiter) != std::string::npos)
+			{
+				folly::fbstring subStr = str.substr(0, str.find(delimiter));
+				splitStrings.emplace_back(subStr);
+
+				str.erase(0, str.find(delimiter) + 1);
+			}
+
+			if (str != "")
+				splitStrings.emplace_back(str);
+
+			return splitStrings;
 		}
 	};
 
