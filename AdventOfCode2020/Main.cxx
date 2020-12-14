@@ -3,6 +3,7 @@
 #include "./Day3/Day3.h"
 #include "./Day4/Day4.h"
 #include "./Day5/Day5.h"
+#include "./Day6/Day6.h"
 
 #include <iostream>
 #include <memory>
@@ -44,5 +45,10 @@ int main()
 	const float d5p2(d5->part2());
 	std::cout << "Part 2: " << d5p2 << std::endl;
 
-
+	std::cout << "---- DAY 6 ----" << std::endl;
+	std::unique_ptr<AdventOfCode2020::Day6> d6(new AdventOfCode2020::Day6);
+	const int d6p1(d6->part1());
+	std::cout << "Part 1: " << d6p1 << std::endl;
+	const int d6p2(d6->part2());
+	std::cout << "Part 2: " << d6p2 << std::endl;
 }
