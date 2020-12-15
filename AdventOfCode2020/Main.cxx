@@ -4,6 +4,7 @@
 #include "./Day4/Day4.h"
 #include "./Day5/Day5.h"
 #include "./Day6/Day6.h"
+#include "./Day7/Day7.h"
 
 #include <iostream>
 #include <memory>
@@ -51,4 +52,12 @@ int main()
 	std::cout << "Part 1: " << d6p1 << std::endl;
 	const int d6p2(d6->part2());
 	std::cout << "Part 2: " << d6p2 << std::endl;
+
+	std::cout << "---- DAY 7 ----" << std::endl;
+	std::unique_ptr<AdventOfCode2020::Day7> d7(new AdventOfCode2020::Day7);
+	const int d7p1(d7->part1());
+	std::cout << "Part 1: " << d7p1 << std::endl;
+	const int d7p2(d7->part2());
+	std::cout << "Part 2: " << d7p2 << std::endl;
+
 }

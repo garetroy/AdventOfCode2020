@@ -34,6 +34,9 @@
     <Text Include="Day6\Day6Source.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="Day7\Day7Source.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cxx">
@@ -60,6 +63,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Day6\Day6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day7\Day7.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
